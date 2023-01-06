@@ -1,0 +1,12 @@
+/.lsp
+.tool-versions
+/.cpcache
+/.calva
+/.clj-kondo
+/node_modules
+/target
+/public/js
+.shadow-cljs
+.nrepl-port
+yarn.lock
+package-lock.json   

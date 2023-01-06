@@ -1,0 +1,22 @@
+{:source-paths ["src"]
+
+ :dependencies [[binaryage/devtools "0.9.10"]
+                [reagent "0.8.0"] 
+                [cider/cider-nrepl "0.28.7"] 
+                ]
+
+ :nrepl        {:port 3333}
+
+ :builds
+ {:app {:target :browser
+        :output-dir "public/js"
+        :asset-path "/js"
+
+        :modules
+        {:main
+         {:entries [graph.core]}}
+
+        :devtools
+        {:after-load  graph.core/main
+         :http-root   "public"
+         :http-port   3000}}}}
